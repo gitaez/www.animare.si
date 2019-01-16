@@ -1,8 +1,22 @@
+:root {
+	--modra: #739ad0;
+	--rjava: #6b3305;
+	--svetlo-rjava: #efe9e7;
+	--bela: #fff;
+	--crna: #000;
+	--obroba: 1px solid #ddd;
+	--rob: 20px;
+
+}
 html,body{
 	margin:0;
 	padding:0;
 	font-family:arial, tahoma, helvetica, sans-serif;
 	font-size:13px;
+	color: var(--crna);
+}
+body {
+	background: #f7f9fb url('./Grafika/ozadje.jpg') no-repeat center;
 }
 #ZgornjaPasica{
 
@@ -17,12 +31,12 @@ html,body{
 }
 
 .Logo {
-	margin-left:20px;
+	margin-left:var(--rob);
 
 }
 
 #FacebookTwitter{
-	margin-right:20px;
+	margin-right:var(--rob);
 	display:flex;
 	flex-wrap:nowrap;
 	flex-direction:row;
@@ -50,8 +64,8 @@ html,body{
 	background-position:center bottom;
 	height: 200px;
 	width: 950px;
-	border-top-left-radius:20px;
-	border-top-right-radius:20px;
+	border-top-left-radius:var(--rob);
+	border-top-right-radius:var(--rob);
 }
 #Navigacija {
     background: transparent url('Grafika/navigacija.png') no-repeat center top;
@@ -91,7 +105,6 @@ html,body{
 	transition: all 1s ease;
 }
 #Vsebina {
-	background-color: green;
 	min-height: 350px;
 	width: 950px;
 	display:flex;
@@ -102,37 +115,58 @@ html,body{
 
 }
 #Clanek{
-	background-color: orange;
+	background-color: var(--bela);
+	padding: var(--rob);
+	box-sizing: border-box;
+	margin: 10px 10px 10px 0;
 	min-height: 350px;
-	width: 750px;
+	width: 690px;
 }
+
 #Sorodno{
-	background-color: #efe9e7;
-	padding: 20px;
-	border-radius: 20px;
+	background-color: var(--svetlo-rjava);
+	padding: var(--rob);
+	border-radius: var(--rob);
 	margin: 10px 0;
 	box-sizing: border-box;
 	min-height: 350px;
 	width: 250px;
 }
+h1{
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--modra);
+	border-bottom: var(--obroba);
+}
 h2 {
 	font-size: 14px;
 	font-weight: bold;
-	color: black;
-	border-bottom: 1px solid #ddd;
+	color: var(--crna);
+	border-bottom: var(--obroba);
+}
+.SlikaVClanku {
+	float:right;
+	margin: 0 0 var(--rob) var(--rob);
+	box-shadow: 2px 2px 3px 2px rgba(51, 51, 51, .75);
+	transition: all 1s ease;
+}
+.SlikaVClanku:hover{
+	box-shadow: 2px 2px 5px 4px rgba(51, 51, 51, .75);
+	transition: all .75s ease;
+	filter: contrast(150%);
 }
 #Noga {
-	background-image: linear-gradient(to bottom, #739ad0 0, #739ad0 10%, #fff 10%, #fff 15%, #6b3305 15%, #6b3305 100%);
+	background-image: linear-gradient(to bottom, var(--modra) 0, var(--modra) 10%, var(--bela) 10%, var(--bela) 15%, var(--rjava) 15%, var(--rjava) 100%);
 	background-repeat:repeat-x;
-	color:white;
-	padding:18px 0 0 20px;
+	color: var(--bela);
+	padding:18px 0 0 var(--rob);
 	margin-bottom:45px;
 	box-sizing:border-box; 
 	height: 45px;
 	width: 950px;
 }
 #Noga a {
-	color: white;
+	color: var(--bela);
 	text-decoration: none;
 }
 #Noga a:hover {
