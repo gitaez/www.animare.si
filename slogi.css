@@ -107,9 +107,19 @@ html,body{
 	width: 750px;
 }
 #Sorodno{
-		background-color: purple;
+	background-color: #efe9e7;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 10px 0;
+	box-sizing: border-box;
 	min-height: 350px;
 	width: 250px;
+}
+h2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	border-bottom: 1px solid #ddd;
 }
 #Noga {
 	background-image: linear-gradient(to bottom, #739ad0 0, #739ad0 10%, #fff 10%, #fff 15%, #6b3305 15%, #6b3305 100%);
