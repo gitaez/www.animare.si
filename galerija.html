@@ -9,6 +9,9 @@
 		<meta name="robots" content="index,follow">
 
 		<link rel="stylesheet" href="slogi.css">
+		<link rel="stylesheet" type="text/css" href="./css/prettyPhoto.css">
+		<script type="text/javascript" src="./js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.prettyPhoto.js"></script>
 	</head>
 	<body>
 		<div id="GlavniOkvir">
@@ -46,15 +49,22 @@
 			</nav>
 			<section id="Vsebina">
 				<article id="Clanek">
-			<img src="./Grafika/Naprava.jpg" alt="Z napravo lahko ustvarimo iluzijo gibanja." class="SlikaVClanku">
-            <img src="./Grafika/posoda.jpg" alt="Lončena posoda" class="SlikaVClanku">
-            <img src="./Grafika/zaba.jpg" alt="Žaba iz plastelina (tehnika stop-motion)" class="SlikaVClanku>">
-            <img src="./Grafika/Animacija.jpg" alt="Z animacijo lahko prikažejo nadnaravne sposobnosti." class="SlikaVClanku">
-            <img src="./Grafika/FestivalVetrnica.jpg" alt="Festival Vetrnica" class="SlikaVClanku">
-            <img src="./Grafika/Pikselacija.jpg" alt="" class="SlikaVClanku">
+				<a href="./Grafika/Naprava_L.jpg" rel="prettyPhoto[vertiljak]" title="Naprava" target="_blank">
+			<img src="./Grafika/Naprava.jpg" alt="Z napravo lahko ustvarimo iluzijo gibanja." class="SlikaVGaleriji">
+			<a href="./Grafika/Posoda_L.jpg" rel="prettyPhoto[vertiljak]" title="Posoda" target="_blank">
+            <img src="./Grafika/Posoda.jpg" alt="Lončena posoda" title="Lončena posoda" class="SlikaVGaleriji">
+            <a href="./Grafika/Zaba_L.jpg" rel="prettyPhoto[vertiljak]" title="Zaba" target="_blank">
+            <img src="./Grafika/Zaba.jpg" alt="Žaba iz plastelina (tehnika stop-motion)" title="Žaba iz plastelina" class="SlikaVGaleriji">
+            <a href="./Grafika/Animacija_L.jpg" rel="prettyPhoto[vertiljak]" title="Animacija" target="_blank">
+            <img src="./Grafika/Animacija.jpg" alt="Z animacijo lahko prikažejo nadnaravne sposobnosti." title="Z animacijo lahko prikažejo nadnaravne sposobnosti." class="SlikaVGaleriji">
+            <a href="./Grafika/FestivalVetrnica_L.jpg" rel="prettyPhoto[vertiljak]" title="FestivalVetrnica" target="_blank">
+            <img src="./Grafika/FestivalVetrnica.jpg" alt="Festival Vetrnica" title="Festival Vetrnica" class="SlikaVGaleriji">
+            <a href="https://www.youtube.com/watch?v=OXSZKRIJWdg" rel="prettyPhoto[vertiljak]" title="Pikselacija" target="_blank">
+            <img src="./Grafika/Pikselacija.jpg" alt="Tehnika pikselacije" title="Tehnika pikselacije" class="SlikaVGaleriji">
 				</article>
-				<aside id="Sorodno">
-
+				<aside id="Sorodno"> <iframe width="210" height="320" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.si/maps?hl=sl&amp;ie=UTF8&amp;t=m&amp;ll=46.051456,14.507307&amp;spn=0.001117,0.001127&amp;z=18&amp;output=embed"></iframe>
+					<br>
+                  <a href="https://maps.google.si/maps?hl=sl&amp;ie=UTF8&amp;t=m&amp;ll=46.051456,14.507307&amp;spn=0.001117,0.001127&amp;z=18&amp;source=embed" style="text-align:left">Prikaži večji zemljevid</a>
 				</aside>
 			</section>
 			<footer id="Noga">
@@ -62,5 +72,10 @@
 			</footer>
 	
 		</div>
+		<script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+        </script>
 	</body>
 </html>

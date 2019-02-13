@@ -150,8 +150,18 @@ h2 {
 	box-shadow: 2px 2px 3px 2px rgba(51, 51, 51, .75);
 	transition: all 1s ease;
 }
-.SlikaVClanku:hover{
+.SlikaVClanku:hover {
 	box-shadow: 2px 2px 5px 4px rgba(51, 51, 51, .75);
+	transition: all .75s ease;
+	filter: contrast(150%);
+}
+.SlikaVGaleriji {
+	margin: 0 0 10px 10px;
+	box-shadow: 2px 2px 3px 2px rgba(51, 51, 51, 75);
+	transition: all 1s ease;
+}
+.SlikaVGaleriji:hover {
+	box-shadow: 2px 2px 5px 4px rgba(51, 51, 51, 75);
 	transition: all .75s ease;
 	filter: contrast(150%);
 }
